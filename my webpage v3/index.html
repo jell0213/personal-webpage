@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>jason's webpage 3</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="jason_icon.ico" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/df8dc471c9.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    </head>
+    <body>
+        <button onclick="location.href='#'" id="back_to_top" type="button" class="position-fixed bottom-0 start-50 translate-middle">回頁首</button>
+        <div class="container-fluid m-0 p-0 border-bottom border-dark" id="carousel_head">
+            <div class="row">
+                <div class="row col-2 m-0 p-0">
+                    <img src="src/圓型大頭照.jpg" alt="圓型大頭照.jpg" id="headshot" class="col-12">
+                </div>
+                <div class="row col-2 m-0 p-0 align-content-center">
+                    <p class="text-center display-6 d-lg-block d-none">李維哲</p>
+                    <p class="text-center fs-2 d-block d-lg-none">李維哲</p>                   
+                </div>
+                <div class="row col-8 m-0 p-0 container-lg">
+                    <div id="carouselExampleInterval" class="carousel slide custom-gutters" data-bs-ride="carousel">
+                        <div class="carousel-inner" id="carousel_inner">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-item active" data-bs-interval="1500" id="carousel-1">
+                                <img src="src/大學成績單截圖.JPG" class="d-block col-12" alt="大學成績單截圖" onclick="image_link(1)">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1500" id="carousel-2">
+                                <img src="src/研究所成績單截圖.JPG" class="d-block col-12" alt="研究所成績單截圖" onclick="image_link(2)">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1500" id="carousel-3">
+                                <img src="src/畢業證書_壓縮.jpg" class="d-block col-12" alt="畢業證書" onclick="image_link(3)">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon "></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                          <span class="carousel-control-next-icon " aria-hidden="true"></span>
+                        </button>
+                      </div>
+                </div>                                
+            </div>
+        </div>
+        <div class="container-fluid container_body">
+            <div class="row">
+                <div class="col-2 information_col border-end border-dark">
+                    <div class="information_container mt-5">
+                        <div class="information row">
+                            <i class="col-1 fa fa-birthday-cake" aria-hidden="true"></i>
+                            <span class="col-10">1996/12/03</span>
+                            <i class="col-1 fa fa-map-marker" aria-hidden="true"></i>
+                            <span class="col-10">新北市中和區連城路263巷11弄11號3樓</span>
+                            <i class="col-1 fa fa-github" aria-hidden="true"></i>
+                            <span class="col-10">https://github.com/jell0213</span>
+                            <i class="col-1 fa fa-envelope-open" aria-hidden="true"></i>
+                            <span class="col-10">jjason41004tw@gmail.com</span>
+                            <i class="col-1 fa fa-phone" aria-hidden="true"></i>
+                            <span class="col-10">0905230227</span>
+                        </div>
+                    </div>
+                    <div class="ability_container mt-5">
+                        <div class="ability">
+                            <h1>技能</h1>
+                            <div class="ability_names">
+                                <p>．C</p>
+                                <p>．Python</p>
+                                <p>．JavaScript</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-8 biography_col">
+                    <div class="biography_container m-0 p-0">
+                        <h1 class="mt-5 mb-3">自我介紹</h1>
+                        <p>我是李維哲，來自新北市，大學與研究所皆就讀中興大學資工系，做事謹慎認真。</p>
+                        <p>喜歡解決問題，面對困難時不會輕易放棄。興趣廣泛，喜歡接觸很多新事物，好奇心旺盛。</p><br>
+                        <h1 class="mb-3">學歷</h1>
+                        <h2>國立中興大學</h2>
+                        <p>資訊科學與工程學系 學士畢業 2015~2019</p>
+                        <hr>
+                        <h2>國立中興大學</h2>
+                        <p>資訊科學與工程學系 碩士畢業 2019~2021</p><br> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/vue.min.js"></script>
+        <script src="js/jquery-3.6.1.min.js"></script>
+        <script src="js/all.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"></script>
+    </body>
+</html>
